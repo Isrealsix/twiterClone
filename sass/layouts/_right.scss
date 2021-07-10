@@ -1,0 +1,18 @@
+.right {
+	grid-column: 2 / -1;
+	grid-row: 1 / 2;
+	position: relative;
+
+	&__form {
+		display: flex;
+		justify-content: center;
+		margin-top: 3rem;
+	}
+
+	&__middle {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
