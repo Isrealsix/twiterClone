@@ -118,3 +118,20 @@ body {
       background-color: var(--color-white); }
       .right__middle .sign-in:hover {
         background-color: #d9ebf7; }
+
+.main-page__footer {
+  grid-column: 1 / -1;
+  grid-row: 2 / -1;
+  background-color: #f5f4f4;
+  padding: 1.5rem;
+  border-top: 0.1rem solid #ddd; }
+  .main-page__footer-list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none; }
+  .main-page__footer-link {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 0 2rem;
+    text-decoration: none;
+    color: #444; }
