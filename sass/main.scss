@@ -8,7 +8,8 @@
 @import 'base/typography';
 @import 'base/utilities';
 
-@import 'layouts/main-page';
 @import 'layouts/left';
 @import 'layouts/right';
-@import 'layouts/main-page-footer';
+
+@import 'pages/main';
+@import 'pages/login';
