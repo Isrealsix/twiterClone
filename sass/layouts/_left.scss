@@ -1,0 +1,24 @@
+.left {
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	background-color: var(--color-secondary);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&-box {
+		display: flex;
+		align-items: center;
+		margin: 4rem;
+		color: var(--color-white);
+
+		i {
+			font-size: 3rem;
+			margin-right: 2rem;
+		}
+
+		&__heading {
+			font-size: 2rem;
+		}
+	}
+}
