@@ -308,3 +308,23 @@ body {
       .feeds-page .nav__user i {
         font-size: 1.6rem;
         color: #444; }
+  .feeds-page .feeds-content {
+    display: grid;
+    grid-template-columns: minmax(5rem, 1fr) 60rem 40rem minmax(5rem, 1fr);
+    grid-template-rows: repeat(2, min-content); }
+    .feeds-page .feeds-content .feeds-header {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      background-color: var(--color-white);
+      margin-top: 1.5rem; }
+    .feeds-page .feeds-content .header-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem;
+      border-bottom: 0.1rem solid #eee; }
+      .feeds-page .feeds-content .header-top h4 {
+        font-size: 2.2rem; }
+      .feeds-page .feeds-content .header-top i {
+        font-size: 2rem;
+        color: var(--color-secondary); }
