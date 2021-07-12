@@ -34,6 +34,7 @@ topBtn.addEventListener('click', () => {
 // Close modal box
 modalClose.addEventListener('click', () => (loginModal.style.display = 'none'));
 
+// Login page validation
 loginBtn.addEventListener('click', () => {
 	const username = document.querySelector('.user').value.trim();
 	const password = document.querySelector('.pass').value.trim();
