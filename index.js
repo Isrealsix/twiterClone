@@ -6,6 +6,14 @@ const feedsPage = document.querySelector('.feeds-page');
 const loginModal = document.querySelector('.login-modal');
 const modalClose = document.querySelector('.login-modal i');
 const loginBtn = document.querySelector('.form__group .form__button');
+const modalBox = document.querySelector('.modal-box');
+const modal = document.querySelector('.modal');
+const postBtn = document.querySelector('.post-btn');
+const postModalClose = document.querySelector('.modal__header i');
+
+const modalInput = document.querySelector('.modal__input');
+const modalPost = document.querySelector('.modal__header button');
+const footerPlus = document.querySelector('.modal__footer span');
 
 // click on the buttons to go to the sign in page;
 rightMiddle.addEventListener('click', ev => {
@@ -45,4 +53,37 @@ loginBtn.addEventListener('click', () => {
 		loginPage.style.display = 'none';
 		feedsPage.style.display = 'block';
 	}
+});
+
+// Show post modal on news feed
+postBtn.addEventListener('click', ev => {
+	modal.style.display = 'block';
+	modalBox.classList.add('modal-box-show');
+	// console.log(modalBox);
+});
+
+postModalClose.addEventListener('click', () => {
+	modal.style.display = 'none';
+	modalBox.classList.remove('modal-box-show');
+
+	if (modalInput.value.trim()) {
+		modalInput.value = '';
+		changeOpacity(0.5);
+	}
+});
+
+const changeOpacity = x => {
+	modalPost.style.opacity = x;
+	footerPlus.style.opacity = x;
+};
+
+modalInput.addEventListener('keypress', ev => {
+	const value = ev.target.value.trim();
+	console.log(value);
+	if (value) changeOpacity(1);
+});
+
+modalInput.addEventListener('blur', ev => {
+	const value = ev.target.value.trim();
+	if (!value) changeOpacity(0.5);
 });

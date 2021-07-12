@@ -163,7 +163,9 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden; }
   .modal-box .modal {
     width: 60rem;
     background-color: var(--color-white);
@@ -171,7 +173,8 @@ body {
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 1.5rem; }
+    border-radius: 1.5rem;
+    display: none; }
     .modal-box .modal__header {
       padding: 1.5rem 2.5rem;
       display: flex;
@@ -241,6 +244,10 @@ body {
           align-items: center;
           color: var(--color-secondary);
           opacity: 0.5; }
+
+.modal-box-show {
+  visibility: visible;
+  opacity: 1; }
 
 .main-page {
   width: 100%;
