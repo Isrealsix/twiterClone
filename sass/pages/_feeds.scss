@@ -112,5 +112,40 @@
 				color: var(--color-secondary);
 			}
 		}
+
+		.header-post {
+			display: flex;
+			align-items: center;
+			padding: 1rem;
+			border-bottom: 0.1rem solid #eee;
+
+			.header-img-box {
+				width: 4rem;
+				height: 4rem;
+				margin-right: 1.5rem;
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					border-radius: 50%;
+				}
+			}
+
+			input {
+				width: 35rem;
+				height: 3rem;
+				border: 0.1rem solid #d6e1e9;
+				border-radius: 3rem;
+				background-color: #d6e1e9;
+				padding: 0.4rem 1.5rem;
+			}
+
+			i {
+				font-size: 2.5rem;
+				color: var(--color-secondary);
+				margin: 1rem;
+			}
+		}
 	}
 }
