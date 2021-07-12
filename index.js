@@ -4,6 +4,8 @@ const rightMiddle = document.querySelector('.right__middle');
 const topBtn = document.querySelector('.right__form .form__button');
 const feedsPage = document.querySelector('.feeds-page');
 const loginModal = document.querySelector('.login-modal');
+const modalClose = document.querySelector('.login-modal i');
+const loginBtn = document.querySelector('.form__group .form__button');
 
 // click on the buttons to go to the sign in page;
 rightMiddle.addEventListener('click', ev => {
@@ -27,4 +29,19 @@ topBtn.addEventListener('click', () => {
 
 	mainPage.style.display = 'none';
 	feedsPage.style.display = 'block';
+});
+
+// Close modal box
+modalClose.addEventListener('click', () => (loginModal.style.display = 'none'));
+
+loginBtn.addEventListener('click', () => {
+	const username = document.querySelector('.user').value.trim();
+	const password = document.querySelector('.pass').value.trim();
+
+	if (!username || !password) {
+		loginModal.style.display = 'block';
+	} else {
+		loginPage.style.display = 'none';
+		feedsPage.style.display = 'block';
+	}
 });
