@@ -1,0 +1,19 @@
+.post-btn {
+	position: fixed;
+	bottom: 2rem;
+	left: 68%;
+	width: 12rem;
+	padding: 1.5rem 1rem;
+	background-color: var(--color-secondary);
+	border: 0.1rem solid var(--color-secondary);
+	border-radius: 3rem;
+	color: var(--color-white);
+	cursor: pointer;
+	font-size: 2rem;
+	box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
+	transition: background-color 0.3s;
+
+	&:hover {
+		background-color: #117abb;
+	}
+}
