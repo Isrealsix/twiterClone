@@ -157,6 +157,41 @@ body {
     font-size: 1.6rem;
     color: #868383; }
 
+.modal-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .modal-box .modal {
+    width: 60rem;
+    background-color: var(--color-white);
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1.5rem; }
+    .modal-box .modal__header {
+      padding: 1.5rem 2.5rem;
+      display: flex;
+      align-items: center;
+      border-bottom: 0.1rem solid #eee; }
+      .modal-box .modal__header i {
+        font-size: 2.3rem;
+        color: var(--color-secondary);
+        cursor: pointer; }
+      .modal-box .modal__header button {
+        margin-left: auto;
+        width: 8rem;
+        padding: 0.8rem 0.5rem;
+        background-color: var(--color-secondary);
+        border: 0.1rem solid var(--color-secondary);
+        border-radius: 3rem;
+        color: var(--color-white);
+        font-size: 1.6rem;
+        opacity: 0.5; }
+
 .main-page {
   width: 100%;
   height: 100vh;
