@@ -3,6 +3,7 @@ const loginPage = document.querySelector('.login-page');
 const rightMiddle = document.querySelector('.right__middle');
 const topBtn = document.querySelector('.right__form .form__button');
 const feedsPage = document.querySelector('.feeds-page');
+const loginModal = document.querySelector('.login-modal');
 
 // click on the buttons to go to the sign in page;
 rightMiddle.addEventListener('click', ev => {
@@ -19,7 +20,10 @@ const goToLoginPage = () => {
 topBtn.addEventListener('click', () => {
 	const username = document.querySelector('.form__user').value.trim();
 	const password = document.querySelector('.form__password').value.trim();
-	if (!username || !password) return goToLoginPage();
+	if (!username || !password) {
+		loginModal.style.display = 'block';
+		return goToLoginPage();
+	}
 
 	mainPage.style.display = 'none';
 	feedsPage.style.display = 'block';
