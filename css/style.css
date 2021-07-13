@@ -20,6 +20,18 @@ body {
   list-style-type: none;
   text-decoration: none; }
 
+.dark-1 {
+  background-color: #1c2938 !important; }
+
+.dark-2 {
+  background-color: #10171e !important; }
+
+.light {
+  color: var(--color-white) !important; }
+
+.border-color {
+  border-color: #444 !important; }
+
 .left {
   grid-column: 1 / 2;
   grid-row: 1 / 2;

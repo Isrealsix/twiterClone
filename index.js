@@ -107,5 +107,11 @@ sidebarClose.addEventListener('click', () => {
 });
 
 // Dark Mode
+const darkable = Array.from(document.querySelectorAll('.dark-mode-1'));
+const darkable2 = Array.from(document.querySelectorAll('.dark-mode-2'));
 
-toggle.addEventListener('click', () => circle.classList.toggle('move'));
+toggle.addEventListener('click', () => {
+	circle.classList.toggle('move');
+	darkable.map(dark => dark.classList.toggle('dark-1'));
+	darkable2.map(dark2 => dark2.classList.toggle('dark-2'));
+});
