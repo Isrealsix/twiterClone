@@ -116,6 +116,58 @@ body {
       .right__middle .sign-in:hover {
         background-color: #d9ebf7; }
 
+.sidebar-box {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+  .sidebar-box .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30rem;
+    height: 100vh;
+    background-color: var(--color-white);
+    padding: 2rem;
+    box-shadow: -0.1rem 0 0.5rem rgba(0, 0, 0, 0.3); }
+    .sidebar-box .sidebar__header {
+      display: flex;
+      align-items: center;
+      padding-bottom: 1.5rem;
+      border-bottom: 0.1rem solid #eee; }
+      .sidebar-box .sidebar__header h2 {
+        font-size: 2rem; }
+      .sidebar-box .sidebar__header i {
+        margin-left: auto;
+        font-size: 2.5rem;
+        color: var(--color-secondary);
+        cursor: pointer; }
+    .sidebar-box .sidebar__user {
+      display: flex;
+      align-items: center;
+      padding-top: 1.5rem; }
+      .sidebar-box .sidebar__user-img {
+        width: 4rem;
+        height: 4rem; }
+        .sidebar-box .sidebar__user-img img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 50%; }
+      .sidebar-box .sidebar__user span {
+        margin-left: auto;
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 5rem;
+        border: 0.1rem solid var(--color-secondary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: var(--color-secondary); }
+
 .post-btn {
   position: fixed;
   bottom: 2rem;
