@@ -109,9 +109,13 @@ sidebarClose.addEventListener('click', () => {
 // Dark Mode
 const darkable = Array.from(document.querySelectorAll('.dark-mode-1'));
 const darkable2 = Array.from(document.querySelectorAll('.dark-mode-2'));
+const lightTexts = Array.from(document.querySelectorAll('.light-text'));
+const borders = Array.from(document.querySelectorAll('.border'));
 
 toggle.addEventListener('click', () => {
 	circle.classList.toggle('move');
 	darkable.map(dark => dark.classList.toggle('dark-1'));
 	darkable2.map(dark2 => dark2.classList.toggle('dark-2'));
+	lightTexts.map(light => light.classList.toggle('light'));
+	borders.map(border => border.classList.toggle('border-color'));
 });
