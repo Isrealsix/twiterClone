@@ -20,6 +20,9 @@ const sidebarBox = document.querySelector('.sidebar-box');
 const sidebar = document.querySelector('.sidebar');
 const sidebarClose = document.querySelector('.sidebar__header i');
 
+const toggle = document.querySelector('.toggle');
+const circle = document.querySelector('.circle');
+
 // click on the buttons to go to the sign in page;
 rightMiddle.addEventListener('click', ev => {
 	const target = ev.target.closest('.main-btn');
@@ -102,3 +105,7 @@ sidebarClose.addEventListener('click', () => {
 	sidebarBox.classList.remove('sidebar-box__display');
 	sidebar.classList.remove('sidebar__display');
 });
+
+// Dark Mode
+
+toggle.addEventListener('click', () => circle.classList.toggle('move'));
