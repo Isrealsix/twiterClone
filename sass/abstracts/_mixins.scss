@@ -1,0 +1,32 @@
+// Media query Manager
+
+$largeX: 81.25em; // 1300px
+$ipad: 68.75em; // 1100px
+$tab-port: 50em; // 800px
+$phone-land: 37.5em; // 600px
+
+@mixin respond($breakpoint) {
+	@if ($breakpoint == largeX) {
+		@media only screen and (max-width: $largeX) {
+			@content;
+		}
+	}
+
+	@if ($breakpoint == ipad) {
+		@media only screen and (max-width: $ipad) {
+			@content;
+		}
+	}
+
+	@if ($breakpoint == tab-port) {
+		@media only screen and (max-width: $tab-port) {
+			@content;
+		}
+	}
+
+	@if ($breakpoint == phone-land) {
+		@media only screen and (max-width: $phone-land) {
+			@content;
+		}
+	}
+}

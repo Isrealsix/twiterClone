@@ -6,11 +6,32 @@
 	justify-content: center;
 	align-items: center;
 
+	@include respond(ipad) {
+		grid-row: 2 / 3;
+	}
+
+	@include respond(phone-land) {
+		display: none;
+	}
+
 	&-box {
 		display: flex;
 		align-items: center;
 		margin: 4rem;
 		color: var(--color-white);
+
+		@include respond(ipad) {
+			width: 50%;
+			// margin: auto;
+
+			h3 {
+				line-height: 3rem;
+			}
+		}
+
+		@include respond(tab-port) {
+			width: 60%;
+		}
 
 		i {
 			font-size: 3rem;

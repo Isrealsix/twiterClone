@@ -1,9 +1,18 @@
 .main-page {
 	width: 100%;
 	height: 100vh;
-	display: none;
+	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: 1fr min-content;
+
+	@include respond(ipad) {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(2, 1fr) min-content;
+	}
+
+	@include respond(phone-land) {
+		grid-template-rows: 1fr min-content;
+	}
 
 	&__footer {
 		grid-column: 1 / -1;
@@ -12,10 +21,22 @@
 		padding: 1.5rem;
 		border-top: 0.1rem solid #ddd;
 
+		@include respond(ipad) {
+			grid-row: 3 / 4;
+		}
+
 		&-list {
 			display: flex;
 			justify-content: center;
 			list-style-type: none;
+
+			@include respond(largeX) {
+				flex-wrap: wrap;
+
+				li {
+					margin-bottom: 1rem;
+				}
+			}
 		}
 
 		&-link {

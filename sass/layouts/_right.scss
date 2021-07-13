@@ -3,10 +3,30 @@
 	grid-row: 1 / 2;
 	position: relative;
 
+	@include respond(ipad) {
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+		width: 70%;
+		margin: auto;
+	}
+
+	@include respond(tab-port) {
+		width: 70%;
+	}
+
+	@include respond(phone-land) {
+		grid-row: 1 / 2;
+		width: 90%;
+	}
+
 	&__form {
 		display: flex;
 		justify-content: center;
 		margin-top: 3rem;
+
+		@include respond(ipad) {
+			display: none;
+		}
 
 		input {
 			width: 20rem;
@@ -63,21 +83,41 @@
 		flex-direction: column;
 		width: 40%;
 
+		@include respond(largeX) {
+			width: 60%;
+		}
+
 		i {
 			font-size: 4rem;
 			color: var(--color-secondary);
 			margin-bottom: 2rem;
+
+			@include respond(tab-port) {
+				display: none;
+			}
 		}
 
 		h1 {
 			font-size: 2.8rem;
 			margin-bottom: 4rem;
 			line-height: 4rem;
+
+			@include respond(tab-port) {
+				margin-bottom: 2rem;
+			}
+
+			@include respond(phone) {
+				font-size: 2.5rem;
+			}
 		}
 
 		h4 {
 			font-size: 2rem;
 			margin-bottom: 2rem;
+
+			@include respond(tab-port) {
+				margin-bottom: 1rem;
+			}
 		}
 
 		button {
