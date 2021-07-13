@@ -79,7 +79,7 @@ const changeOpacity = x => {
 
 modalInput.addEventListener('keypress', ev => {
 	const value = ev.target.value.trim();
-	console.log(value);
+	// console.log(value);
 	if (value) changeOpacity(1);
 });
 
