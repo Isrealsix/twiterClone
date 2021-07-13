@@ -167,6 +167,38 @@ body {
         align-items: center;
         border-radius: 50%;
         color: var(--color-secondary); }
+    .sidebar-box .sidebar__user-info {
+      padding: 1.5rem 0;
+      font-size: 1.8rem; }
+      .sidebar-box .sidebar__user-info h4 {
+        margin-bottom: 0.5rem; }
+    .sidebar-box .sidebar__follow {
+      display: flex;
+      padding: 1.5rem 0; }
+      .sidebar-box .sidebar__follow .follow__count {
+        font-size: 1.8rem; }
+        .sidebar-box .sidebar__follow .follow__count:first-child {
+          margin-right: 2.5rem; }
+        .sidebar-box .sidebar__follow .follow__count span {
+          font-weight: bold; }
+    .sidebar-box .sidebar-list-1 {
+      border-bottom: 0.1rem solid #eee; }
+      .sidebar-box .sidebar-list-1 ul {
+        padding: 1.5rem 0; }
+        .sidebar-box .sidebar-list-1 ul li {
+          margin-bottom: 2.5rem; }
+        .sidebar-box .sidebar-list-1 ul a {
+          font-size: 1.6rem;
+          color: #868383; }
+        .sidebar-box .sidebar-list-1 ul i {
+          margin-right: 1rem; }
+    .sidebar-box .sidebar-list-2 ul {
+      padding: 3rem 0; }
+    .sidebar-box .sidebar-list-2 li {
+      margin-bottom: 2.5rem; }
+    .sidebar-box .sidebar-list-2 a {
+      font-size: 1.6rem;
+      color: #868383; }
 
 .post-btn {
   position: fixed;

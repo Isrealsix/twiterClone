@@ -64,5 +64,67 @@
 				color: var(--color-secondary);
 			}
 		}
+
+		&__user-info {
+			padding: 1.5rem 0;
+			font-size: 1.8rem;
+
+			h4 {
+				margin-bottom: 0.5rem;
+			}
+		}
+
+		&__follow {
+			display: flex;
+			padding: 1.5rem 0;
+
+			.follow__count {
+				font-size: 1.8rem;
+
+				&:first-child {
+					margin-right: 2.5rem;
+				}
+
+				span {
+					font-weight: bold;
+				}
+			}
+		}
+
+		&-list-1 {
+			border-bottom: 0.1rem solid #eee;
+
+			ul {
+				padding: 1.5rem 0;
+
+				li {
+					margin-bottom: 2.5rem;
+				}
+
+				a {
+					font-size: 1.6rem;
+					color: #868383;
+				}
+
+				i {
+					margin-right: 1rem;
+				}
+			}
+		}
+
+		&-list-2 {
+			ul {
+				padding: 3rem 0;
+			}
+
+			li {
+				margin-bottom: 2.5rem;
+			}
+
+			a {
+				font-size: 1.6rem;
+				color: #868383;
+			}
+		}
 	}
 }
