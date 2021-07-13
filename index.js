@@ -15,6 +15,11 @@ const modalInput = document.querySelector('.modal__input');
 const modalPost = document.querySelector('.modal__header button');
 const footerPlus = document.querySelector('.modal__footer span');
 
+const user = document.querySelector('.nav__user');
+const sidebarBox = document.querySelector('.sidebar-box');
+const sidebar = document.querySelector('.sidebar');
+const sidebarClose = document.querySelector('.sidebar__header i');
+
 // click on the buttons to go to the sign in page;
 rightMiddle.addEventListener('click', ev => {
 	const target = ev.target.closest('.main-btn');
@@ -86,4 +91,14 @@ modalInput.addEventListener('keypress', ev => {
 modalInput.addEventListener('blur', ev => {
 	const value = ev.target.value.trim();
 	if (!value) changeOpacity(0.5);
+});
+
+user.addEventListener('click', () => {
+	sidebarBox.classList.add('sidebar-box__display');
+	sidebar.classList.add('sidebar__display');
+});
+
+sidebarClose.addEventListener('click', () => {
+	sidebarBox.classList.remove('sidebar-box__display');
+	sidebar.classList.remove('sidebar__display');
 });
