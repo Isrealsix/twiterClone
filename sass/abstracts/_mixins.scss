@@ -1,5 +1,6 @@
 // Media query Manager
 
+$xx-large: 100em; // 1600px
 $largeX: 81.25em; // 1300px
 $ipad: 68.75em; // 1100px
 $ipad-mini: 50.25em; // 900px
@@ -10,6 +11,12 @@ $phone: 31.25em; // 500px
 $tiny: 25em; //400px
 
 @mixin respond($breakpoint) {
+	@if ($breakpoint == xx-large) {
+		@media only screen and (max-width: $xx-large) {
+			@content;
+		}
+	}
+
 	@if ($breakpoint == largeX) {
 		@media only screen and (max-width: $largeX) {
 			@content;

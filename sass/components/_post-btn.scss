@@ -13,6 +13,24 @@
 	box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
 	transition: background-color 0.3s;
 
+	@include respond(ipad) {
+		left: 80%;
+	}
+
+	@include respond(tablets) {
+		left: 75%;
+		font-size: 1.8rem;
+		width: 11rem;
+		padding: 1.2rem 0.8rem;
+	}
+
+	@include respond(phone-land) {
+		left: 70%;
+	}
+
+	@include respond(phone) {
+		left: 60%;
+	}
 	&:hover {
 		background-color: #117abb;
 	}

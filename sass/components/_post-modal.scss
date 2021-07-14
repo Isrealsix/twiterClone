@@ -18,6 +18,10 @@
 		border-radius: 1.5rem;
 		display: none;
 
+		@include respond(tablets) {
+			width: 90%;
+		}
+
 		&__header {
 			padding: 1.5rem 2.5rem;
 			display: flex;
@@ -51,6 +55,10 @@
 				width: 4rem;
 				height: 4rem;
 				margin-right: 1.5rem;
+
+				@include respond(tablets) {
+					flex-shrink: 0;
+				}
 
 				img {
 					width: 100%;

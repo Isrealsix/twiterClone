@@ -253,6 +253,9 @@ body {
         padding: 1.5rem 0; }
         .sidebar-box .sidebar-list-1 ul li {
           margin-bottom: 2.5rem; }
+          @media only screen and (max-width: 43.75em) {
+            .sidebar-box .sidebar-list-1 ul li {
+              margin-bottom: 1.5rem; } }
         .sidebar-box .sidebar-list-1 ul a {
           font-size: 1.6rem;
           color: #868383; }
@@ -262,6 +265,9 @@ body {
       padding: 3rem 0; }
     .sidebar-box .sidebar-list-2 li {
       margin-bottom: 2.5rem; }
+      @media only screen and (max-width: 43.75em) {
+        .sidebar-box .sidebar-list-2 li {
+          margin-bottom: 1.5rem; } }
     .sidebar-box .sidebar-list-2 a {
       font-size: 1.6rem;
       color: #868383; }
@@ -309,6 +315,21 @@ body {
   font-size: 2rem;
   box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
   transition: background-color 0.3s; }
+  @media only screen and (max-width: 68.75em) {
+    .post-btn {
+      left: 80%; } }
+  @media only screen and (max-width: 43.75em) {
+    .post-btn {
+      left: 75%;
+      font-size: 1.8rem;
+      width: 11rem;
+      padding: 1.2rem 0.8rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .post-btn {
+      left: 70%; } }
+  @media only screen and (max-width: 31.25em) {
+    .post-btn {
+      left: 60%; } }
   .post-btn:hover {
     background-color: #117abb; }
 
@@ -375,6 +396,9 @@ body {
     transform: translate(-50%, -50%);
     border-radius: 1.5rem;
     display: none; }
+    @media only screen and (max-width: 43.75em) {
+      .modal-box .modal {
+        width: 90%; } }
     .modal-box .modal__header {
       padding: 1.5rem 2.5rem;
       display: flex;
@@ -401,6 +425,9 @@ body {
         width: 4rem;
         height: 4rem;
         margin-right: 1.5rem; }
+        @media only screen and (max-width: 43.75em) {
+          .modal-box .modal__body .modal-img {
+            flex-shrink: 0; } }
         .modal-box .modal__body .modal-img img {
           width: 100%;
           height: 100%;
@@ -452,7 +479,7 @@ body {
 .main-page {
   width: 100%;
   height: 100vh;
-  display: grid;
+  display: none;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr min-content; }
   @media only screen and (max-width: 68.75em) {
@@ -661,7 +688,7 @@ body {
 .feeds-page {
   width: 100%;
   height: 100vh;
-  display: none; }
+  display: block; }
   .feeds-page .nav {
     width: 100%;
     height: 6.5rem;
@@ -675,16 +702,28 @@ body {
     .feeds-page .nav__icons {
       display: flex;
       align-items: center; }
+      @media only screen and (max-width: 25em) {
+        .feeds-page .nav__icons i {
+          font-size: 2rem; } }
       .feeds-page .nav__icons a {
         margin-right: 7rem;
         color: #9e9a9a;
         font-size: 2.5rem; }
+        @media only screen and (max-width: 31.25em) {
+          .feeds-page .nav__icons a {
+            margin-right: 5rem; } }
+        @media only screen and (max-width: 25em) {
+          .feeds-page .nav__icons a {
+            margin-right: 4rem; } }
       .feeds-page .nav__icons .active {
         color: var(--color-secondary); }
     .feeds-page .nav__search-bar {
       display: flex;
       align-items: center;
       position: relative; }
+      @media only screen and (max-width: 68.75em) {
+        .feeds-page .nav__search-bar {
+          display: none; } }
       .feeds-page .nav__search-bar i {
         position: absolute;
         left: 1.5rem;
@@ -706,6 +745,9 @@ body {
       display: flex;
       align-items: center;
       cursor: pointer; }
+      @media only screen and (max-width: 25em) {
+        .feeds-page .nav__user {
+          margin-left: 1rem; } }
       .feeds-page .nav__user .user__img-box {
         width: 4rem;
         height: 4rem; }
@@ -718,25 +760,43 @@ body {
         margin: 0 1rem;
         font-size: 1.8rem;
         color: #444; }
+        @media only screen and (max-width: 37.5em) {
+          .feeds-page .nav__user .user-link {
+            display: none; } }
       .feeds-page .nav__user i {
         font-size: 1.6rem;
         color: #444; }
+        @media only screen and (max-width: 37.5em) {
+          .feeds-page .nav__user i {
+            display: none; } }
   .feeds-page .feeds-content {
     display: grid;
     grid-template-columns: minmax(5rem, 1fr) 60rem 40rem minmax(5rem, 1fr);
     grid-template-rows: repeat(2, min-content);
     padding-top: 6.5rem; }
+    @media only screen and (max-width: 68.75em) {
+      .feeds-page .feeds-content {
+        grid-template-columns: minmax(5rem, 1fr) 2fr minmax(5rem, 1fr); } }
+    @media only screen and (max-width: 43.75em) {
+      .feeds-page .feeds-content {
+        grid-template-columns: 1fr; } }
     .feeds-page .feeds-content .feeds-header {
       grid-column: 2 / 3;
       grid-row: 1 / 2;
       background-color: var(--color-white);
       margin-top: 1.5rem; }
+      @media only screen and (max-width: 43.75em) {
+        .feeds-page .feeds-content .feeds-header {
+          grid-column: 1 / -1; } }
     .feeds-page .feeds-content .header-top {
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 1.5rem;
       border-bottom: 0.1rem solid #eee; }
+      @media only screen and (max-width: 31.25em) {
+        .feeds-page .feeds-content .header-top {
+          width: 70%; } }
       .feeds-page .feeds-content .header-top h4 {
         font-size: 2.2rem; }
       .feeds-page .feeds-content .header-top i {
@@ -751,6 +811,9 @@ body {
         width: 4rem;
         height: 4rem;
         margin-right: 1.5rem; }
+        @media only screen and (max-width: 31.25em) {
+          .feeds-page .feeds-content .header-post .header-img-box {
+            display: none; } }
         .feeds-page .feeds-content .header-post .header-img-box img {
           width: 100%;
           height: 100%;
@@ -763,14 +826,29 @@ body {
         border-radius: 3rem;
         background-color: #d6e1e9;
         padding: 0.4rem 1.5rem; }
+        @media only screen and (max-width: 37.5em) {
+          .feeds-page .feeds-content .header-post input {
+            width: 27rem; } }
+        @media only screen and (max-width: 31.25em) {
+          .feeds-page .feeds-content .header-post input {
+            width: 20rem; } }
+        @media only screen and (max-width: 25em) {
+          .feeds-page .feeds-content .header-post input {
+            width: 16rem; } }
       .feeds-page .feeds-content .header-post i {
         font-size: 2.5rem;
         color: var(--color-secondary);
         margin: 1rem; }
+        @media only screen and (max-width: 25em) {
+          .feeds-page .feeds-content .header-post i {
+            font-size: 2rem; } }
   .feeds-page .posts {
     grid-column: 2 / 3;
     grid-row: 2 / -1;
     background-color: var(--color-white); }
+    @media only screen and (max-width: 43.75em) {
+      .feeds-page .posts {
+        grid-column: 1 / -1; } }
     .feeds-page .posts .post {
       display: flex;
       padding: 1.5rem;
@@ -780,6 +858,11 @@ body {
         height: 6rem;
         flex-shrink: 0;
         margin-right: 1.5rem; }
+        @media only screen and (max-width: 31.25em) {
+          .feeds-page .posts .post__avatar {
+            width: 4rem;
+            height: 4rem;
+            margin-right: 1rem; } }
         .feeds-page .posts .post__avatar img {
           width: 100%;
           height: 100%;
@@ -801,12 +884,19 @@ body {
       .feeds-page .posts .post__text {
         font-size: 1.6rem;
         margin-bottom: 1rem; }
+        @media only screen and (max-width: 37.5em) {
+          .feeds-page .posts .post__text {
+            width: 90%; } }
       .feeds-page .posts .post__icons {
         margin-top: 1rem; }
         .feeds-page .posts .post__icons i {
           font-size: 1.8rem;
           color: #868383;
           margin-right: 6rem; }
+          @media only screen and (max-width: 25em) {
+            .feeds-page .posts .post__icons i {
+              margin-right: 4rem;
+              margin-top: 0.4rem; } }
       .feeds-page .posts .post__img {
         width: 48rem;
         height: 30rem; }
@@ -815,12 +905,33 @@ body {
           height: 100%;
           object-fit: cover;
           border-radius: 1rem; }
+          @media only screen and (max-width: 37.5em) {
+            .feeds-page .posts .post__img img {
+              width: 90%;
+              height: 25rem; } }
+          @media only screen and (max-width: 31.25em) {
+            .feeds-page .posts .post__img img {
+              width: 85%;
+              height: 20rem; } }
+          @media only screen and (max-width: 25em) {
+            .feeds-page .posts .post__img img {
+              width: 70%;
+              height: 15rem; } }
   .feeds-page .follow {
     position: fixed;
     top: 8rem;
     left: 57%;
     background-color: var(--color-white);
     width: 35rem; }
+    @media only screen and (max-width: 100em) {
+      .feeds-page .follow {
+        left: 58% 0.5; } }
+    @media only screen and (max-width: 81.25em) {
+      .feeds-page .follow {
+        left: 60%; } }
+    @media only screen and (max-width: 68.75em) {
+      .feeds-page .follow {
+        display: none; } }
     .feeds-page .follow__heading {
       padding: 1rem;
       font-size: 1.8rem;

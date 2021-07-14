@@ -112,6 +112,9 @@
 
 				li {
 					margin-bottom: 2.5rem;
+					@include respond(tablets) {
+						margin-bottom: 1.5rem;
+					}
 				}
 
 				a {
@@ -132,6 +135,10 @@
 
 			li {
 				margin-bottom: 2.5rem;
+
+				@include respond(tablets) {
+					margin-bottom: 1.5rem;
+				}
 			}
 
 			a {
