@@ -2,8 +2,12 @@
 
 $largeX: 81.25em; // 1300px
 $ipad: 68.75em; // 1100px
+$ipad-mini: 50.25em; // 900px
 $tab-port: 50em; // 800px
+$tablets: 43.75em; // 700px
 $phone-land: 37.5em; // 600px
+$phone: 31.25em; // 500px
+$tiny: 25em; //400px
 
 @mixin respond($breakpoint) {
 	@if ($breakpoint == largeX) {
@@ -18,14 +22,38 @@ $phone-land: 37.5em; // 600px
 		}
 	}
 
+	@if ($breakpoint == ipad-mini) {
+		@media only screen and (max-width: $ipad-mini) {
+			@content;
+		}
+	}
+
 	@if ($breakpoint == tab-port) {
 		@media only screen and (max-width: $tab-port) {
 			@content;
 		}
 	}
 
+	@if ($breakpoint == tablets) {
+		@media only screen and (max-width: $tablets) {
+			@content;
+		}
+	}
+
 	@if ($breakpoint == phone-land) {
 		@media only screen and (max-width: $phone-land) {
+			@content;
+		}
+	}
+
+	@if ($breakpoint == phone) {
+		@media only screen and (max-width: $phone) {
+			@content;
+		}
+	}
+
+	@if ($breakpoint == tiny) {
+		@media only screen and (max-width: $tiny) {
 			@content;
 		}
 	}

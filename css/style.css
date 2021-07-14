@@ -146,6 +146,9 @@ body {
       @media only screen and (max-width: 50em) {
         .right__middle h1 {
           margin-bottom: 2rem; } }
+      @media only screen and (max-width: 31.25em) {
+        .right__middle h1 {
+          font-size: 2.5rem; } }
     .right__middle h4 {
       font-size: 2rem;
       margin-bottom: 2rem; }
@@ -321,6 +324,21 @@ body {
   box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.3);
   border-radius: 0 0 1rem 1rem;
   display: none; }
+  @media only screen and (max-width: 68.75em) {
+    .login-modal {
+      width: 60rem; } }
+  @media only screen and (max-width: 50.25em) {
+    .login-modal {
+      width: 50rem; } }
+  @media only screen and (max-width: 43.75em) {
+    .login-modal {
+      width: 40rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .login-modal {
+      width: 30rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .login-modal {
+      width: 25rem; } }
   .login-modal i {
     position: absolute;
     top: 2rem;
@@ -328,10 +346,16 @@ body {
     font-size: 1.3rem;
     color: #868383;
     cursor: pointer; }
+    @media only screen and (max-width: 37.5em) {
+      .login-modal i {
+        top: 2.5rem; } }
   .login-modal p {
     margin: 2rem 1rem 0 1rem;
     font-size: 1.6rem;
     color: #868383; }
+    @media only screen and (max-width: 37.5em) {
+      .login-modal p {
+        font-size: 1.4rem; } }
 
 .modal-box {
   position: fixed;
@@ -470,6 +494,9 @@ body {
   grid-template-columns: minmax(5rem, 1fr) 2fr minmax(5rem, 1fr);
   grid-template-rows: repeat(2, min-content) 1fr;
   grid-row-gap: 1.5rem; }
+  @media only screen and (max-width: 25em) {
+    .login-page {
+      grid-template-columns: 2rem 1fr 2rem; } }
   .login-page__nav {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
@@ -482,6 +509,21 @@ body {
       margin: auto;
       display: flex;
       align-items: flex-end; }
+      @media only screen and (max-width: 68.75em) {
+        .login-page__nav .nav__list {
+          width: 80rem; } }
+      @media only screen and (max-width: 50.25em) {
+        .login-page__nav .nav__list {
+          width: 60rem; } }
+      @media only screen and (max-width: 43.75em) {
+        .login-page__nav .nav__list {
+          width: 50rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .login-page__nav .nav__list {
+          width: 40rem; } }
+      @media only screen and (max-width: 31.25em) {
+        .login-page__nav .nav__list {
+          width: 30rem; } }
     .login-page__nav .nav__link {
       font-size: 1.6rem;
       color: #555;
@@ -517,6 +559,26 @@ body {
     grid-template-columns: 10rem 1fr;
     grid-template-rows: 2fr 1fr;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3); }
+    @media only screen and (max-width: 68.75em) {
+      .login-page .login {
+        width: 80rem; } }
+    @media only screen and (max-width: 50.25em) {
+      .login-page .login {
+        width: 60rem; } }
+    @media only screen and (max-width: 43.75em) {
+      .login-page .login {
+        width: 50rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .login-page .login {
+        width: 40rem;
+        grid-template-columns: 5rem 1fr; } }
+    @media only screen and (max-width: 31.25em) {
+      .login-page .login {
+        width: 30rem;
+        grid-template-columns: 2rem 1fr; } }
+    @media only screen and (max-width: 25em) {
+      .login-page .login {
+        width: 100%; } }
     .login-page .login__box {
       grid-column: 2 / -1;
       grid-row: 1 / 2;
@@ -536,6 +598,9 @@ body {
         font-size: 1.5rem;
         padding-left: 1rem;
         transition: background-color 0.3s; }
+        @media only screen and (max-width: 31.25em) {
+          .login-page .login__form .form__input {
+            width: 20rem; } }
         .login-page .login__form .form__input:focus {
           background-color: #d9ebf7; }
       .login-page .login__form .form__group {
@@ -555,9 +620,19 @@ body {
           cursor: pointer;
           font-weight: 300;
           margin-right: 1rem; }
+          @media only screen and (max-width: 37.5em) {
+            .login-page .login__form .form__group label {
+              font-size: 1.4rem; } }
         .login-page .login__form .form__group a {
           font-size: 1.6rem;
           color: var(--color-secondary); }
+          @media only screen and (max-width: 37.5em) {
+            .login-page .login__form .form__group a {
+              font-size: 1.4rem; } }
+          @media only screen and (max-width: 31.25em) {
+            .login-page .login__form .form__group a {
+              display: block;
+              margin-top: 1.5rem; } }
     .login-page .login__footer {
       grid-column: 1 / -1;
       grid-row: 2 / -1;
@@ -567,10 +642,19 @@ body {
       flex-direction: column;
       justify-content: center;
       margin-top: 2rem; }
+      @media only screen and (max-width: 37.5em) {
+        .login-page .login__footer {
+          padding-left: 5rem; } }
+      @media only screen and (max-width: 31.25em) {
+        .login-page .login__footer {
+          padding-left: 2rem; } }
       .login-page .login__footer p {
         font-size: 1.6rem;
         font-weight: 300;
         margin: 0.5rem 0; }
+        @media only screen and (max-width: 37.5em) {
+          .login-page .login__footer p {
+            font-size: 1.4rem; } }
       .login-page .login__footer a {
         color: var(--color-secondary); }
 

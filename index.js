@@ -119,3 +119,5 @@ toggle.addEventListener('click', () => {
 	lightTexts.map(light => light.classList.toggle('light'));
 	borders.map(border => border.classList.toggle('border-color'));
 });
+
+// window.addEventListener('resize', () => window.location.reload());

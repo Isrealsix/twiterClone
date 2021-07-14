@@ -11,6 +11,26 @@
 	border-radius: 0 0 1rem 1rem;
 	display: none;
 
+	@include respond(ipad) {
+		width: 60rem;
+	}
+
+	@include respond(ipad-mini) {
+		width: 50rem;
+	}
+
+	@include respond(tablets) {
+		width: 40rem;
+	}
+
+	@include respond(phone-land) {
+		width: 30rem;
+	}
+
+	@include respond(phone) {
+		width: 25rem;
+	}
+
 	i {
 		position: absolute;
 		top: 2rem;
@@ -18,11 +38,19 @@
 		font-size: 1.3rem;
 		color: #868383;
 		cursor: pointer;
+
+		@include respond(phone-land) {
+			top: 2.5rem;
+		}
 	}
 
 	p {
 		margin: 2rem 1rem 0 1rem;
 		font-size: 1.6rem;
 		color: #868383;
+
+		@include respond(phone-land) {
+			font-size: 1.4rem;
+		}
 	}
 }
